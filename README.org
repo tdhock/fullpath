@@ -1,0 +1,9 @@
+** 8 Apr 2019
+
+[[file:figure-approx-target.R]] makes
+
+[[file:figure-approx-target.png]]
+
+which shows how the approximate target interval algorithm focuses on
+evaluating penalties near the minimum, and computes the same interval
+as if we had access to all penalties/models for this data set.
