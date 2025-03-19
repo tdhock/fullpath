@@ -1,3 +1,34 @@
+** 19 Mar 2025
+
+[[file:download.R]] downloads change-point meta-data including error rates
+from a huge number of models (FPOP Poisson) computed for 16
+large-scale genomic data sets. These data could be useful for checking
+different strategies for computing an approximate target interval.
+
+#+begin_src R
+> data.list[["db-loss.tsv"]][
++ , .(models=.N), by=prob.id
++ ]
+    prob.id models
+      <int>  <int>
+ 1:       1 373870
+ 2:    1127  79660
+ 3:    1129  99074
+ 4:    1131  89610
+ 5:    1133  95560
+ 6:    1135 102509
+ 7:    1137  95061
+ 8:    1139  98111
+ 9:    1141  95220
+10:    1143  98240
+11:    1145  84212
+12:    1147  92953
+13:    1149  92562
+14:    1151  83886
+15:    1153 137129
+16:    1155  86785
+#+end_src
+
 ** 8 Apr 2019
 
 [[file:figure-approx-target.R]] makes

@@ -14,10 +14,6 @@ for(f in file.vec){
 }
 sum(data.list$loss.timing.tsv$seconds, na.rm = TRUE)/60/60/24/365
 
-
 data.list[["db-loss.tsv"]][
 , .(models=.N), by=prob.id
-][
-  data.list[["db-problems.tsv"]],
-  on="prob.id"
 ]
